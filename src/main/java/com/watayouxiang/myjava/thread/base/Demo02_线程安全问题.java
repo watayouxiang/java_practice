@@ -17,35 +17,24 @@ package com.watayouxiang.myjava.thread.base;
 	
  */
 public class Demo02_线程安全问题 {
+    private static int ticket = 3;
 
     public static void main(String[] args) {
-        Ticket ticket = new Ticket();
-
-        new Thread(ticket).start();
-        new Thread(ticket).start();
-        new Thread(ticket).start();
-        new Thread(ticket).start();
-    }
-
-    static class Ticket implements Runnable {
-        private int ticket = 100;
-
-        @Override
-        public void run() {
-            try {
-                while (true) {
-                    Thread.sleep(10);
+        for (int i = 0; i < 5; i++) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
                     saleTicket();
                 }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-        private void saleTicket() {
-            if (ticket > 0) {
-                System.out.println(Thread.currentThread().getName() + ", tick = " + ticket--);
-            }
+            }).start();
         }
     }
+
+    private static void saleTicket() {
+        if (ticket > 0) {
+            ticket--;
+            System.out.println("当前剩余票数：" + ticket);
+        }
+    }
+
 }

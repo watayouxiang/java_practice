@@ -26,39 +26,31 @@ package com.watayouxiang.myjava.thread.base;
  */
 public class Demo04_同步代码块 {
 
-    public static void main(String[] args) {
-        Ticket ticket = new Ticket();
-
-        new Thread(ticket).start();
-        new Thread(ticket).start();
-        new Thread(ticket).start();
-        new Thread(ticket).start();
-    }
-
-    static class Ticket implements Runnable {
-        private int ticket = 100;
-
-        @Override
-        public void run() {
-            try {
-                while (true) {
-                    Thread.sleep(10);
-                    saleTicket();
-                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+    static class Cinema {
+        private int ticket = 3;
 
         /**
          * 同步代码块
          */
-        private void saleTicket() {
+        void saleTicket() {
             synchronized (this) {
                 if (ticket > 0) {
-                    System.out.println(Thread.currentThread().getName() + ", tick = " + ticket--);
+                    ticket--;
+                    System.out.println("当前剩余票数：" + ticket);
                 }
             }
+        }
+    }
+
+    public static void main(String[] args) {
+        Cinema cinema = new Cinema();
+        for (int i = 0; i < 5; i++) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    cinema.saleTicket();
+                }
+            }).start();
         }
     }
 

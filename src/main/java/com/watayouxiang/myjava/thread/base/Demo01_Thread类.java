@@ -8,9 +8,9 @@ public class Demo01_Thread类 {
 //        priority();
 //        join();
 //        sleep();
-        yield();
+//        yield();
 //        daemon();
-//        interrupt();
+        interrupt();
     }
 
     /**
@@ -22,21 +22,24 @@ public class Demo01_Thread类 {
             public void run() {
                 try {
                     while (true) {
-                        System.out.println(Thread.currentThread().getName() + " sleeping 3 second");
-                        Thread.sleep(3000);
+                        System.out.println(Thread.currentThread().getName() + " 开始睡觉");
+                        Thread.sleep(1000);
                     }
                 } catch (InterruptedException ignored) {
                 }
-                System.out.println(Thread.currentThread().getName() + " end");
+                System.out.println(Thread.currentThread().getName() + " 结束");
             }
         };
         t0.start();
 
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(Thread.currentThread().getName() + " running " + i);
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
         // 立即打断“线程”，让其恢复到"运行状态"或"阻塞状态"。
         t0.interrupt();
+        System.out.println("立即打断 " + t0.getName() + " 线程");
     }
 
     /**
