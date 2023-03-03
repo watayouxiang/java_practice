@@ -1,6 +1,6 @@
 package com.watayouxiang.myjava.thread.base;
 
-/*
+/**
 Object类的等待唤醒机制：
 
 	如下方法定义在Object类
@@ -33,8 +33,6 @@ public class Demo06_等待唤醒机制Object {
         new Thread(new Producer(res)).start();
         new Thread(new Consumer(res)).start();
     }
-
-    //==============================================================================================
 
     /**
      * 消费者
@@ -81,8 +79,6 @@ public class Demo06_等待唤醒机制Object {
             }
         }
     }
-
-    //==============================================================================================
 
     /**
      * 资源

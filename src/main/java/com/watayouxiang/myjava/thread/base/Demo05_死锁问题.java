@@ -1,6 +1,6 @@
 package com.watayouxiang.myjava.thread.base;
 
-/*
+/**
 
 死锁：同步中嵌套同步
 

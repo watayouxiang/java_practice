@@ -1,6 +1,6 @@
 package com.watayouxiang.myjava.thread.base;
 
-/*
+/**
 
 同步的前提：
 	 1，必须要有两个或者两个以上的线程。

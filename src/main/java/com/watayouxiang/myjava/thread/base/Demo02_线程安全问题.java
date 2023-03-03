@@ -1,6 +1,6 @@
 package com.watayouxiang.myjava.thread.base;
 
-/*
+/**
 
 问题的原因：
 	当多条语句在操作同一个共享数据时，一个线程对多条语句只执行了一部分，

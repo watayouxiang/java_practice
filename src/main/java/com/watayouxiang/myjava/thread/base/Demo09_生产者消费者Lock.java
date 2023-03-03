@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/*
+/**
 
 生产者和消费者问题：（用 “Lock类的等待唤醒机制” 来解决）
 
@@ -27,8 +27,6 @@ public class Demo09_生产者消费者Lock {
         new Thread(consumer).start();
         new Thread(consumer).start();
     }
-
-    //==============================================================================================
 
     static class Consumer implements Runnable {
         private Res res;
@@ -69,8 +67,6 @@ public class Demo09_生产者消费者Lock {
             }
         }
     }
-
-    //==============================================================================================
 
     static class Res {
         private int count = 0;

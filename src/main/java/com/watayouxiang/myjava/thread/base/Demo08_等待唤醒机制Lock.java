@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/*
+/**
 
 Lock类的等待唤醒机制：（JDK1.5 中提供的多线程升级解决方案）
 
@@ -31,8 +31,6 @@ public class Demo08_等待唤醒机制Lock {
         new Thread(producer).start();
         new Thread(consumer).start();
     }
-
-    //==============================================================================================
 
     static class Consumer implements Runnable {
         private Res res;
@@ -73,8 +71,6 @@ public class Demo08_等待唤醒机制Lock {
             }
         }
     }
-
-    //==============================================================================================
 
     static class Res {
         private boolean present = false;//标记
