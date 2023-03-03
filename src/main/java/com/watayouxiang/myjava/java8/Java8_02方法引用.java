@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/*
+/**
 方法引用通过方法的名字来指向一个方法。
 
 方法引用可以使语言的构造更紧凑简洁，减少冗余代码。

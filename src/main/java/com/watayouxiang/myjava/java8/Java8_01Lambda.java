@@ -1,6 +1,6 @@
 package com.watayouxiang.myjava.java8;
 
-/*
+/**
 
 lambda 表达式的语法格式如下：
     (parameters) -> expression

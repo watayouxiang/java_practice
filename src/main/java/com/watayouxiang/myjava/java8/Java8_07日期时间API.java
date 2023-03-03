@@ -2,7 +2,7 @@ package com.watayouxiang.myjava.java8;
 
 import java.time.*;
 
-/*
+/**
 
 Java 8 在 java.time 包下提供了很多新的 API。以下为两个比较重要的 API：
     Local(本地) − 简化了日期时间的处理，没有时区的问题。

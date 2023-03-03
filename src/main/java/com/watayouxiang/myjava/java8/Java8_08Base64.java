@@ -4,7 +4,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.UUID;
 
-/*
+/**
 
 在Java 8中，Base64编码已经成为Java类库的标准。
 Java 8 内置了 Base64 编码的编码器和解码器。

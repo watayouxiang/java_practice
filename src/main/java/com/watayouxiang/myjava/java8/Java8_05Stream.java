@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/*
+/**
 什么是 Stream？
 Stream（流）是一个来自数据源的元素队列并支持聚合操作
 
