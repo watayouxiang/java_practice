@@ -1,0 +1,30 @@
+# java-io思维导图
+
+- Char 字符流
+	- Writer 写出流
+		- FileWriter 文件流
+		- BufferedWriter 缓冲流
+		- OutputStreamWriter 转换流
+	- Reader 读入流
+		- FileReader 文件流
+			- LineNumberReader 行数流
+		- BufferedReader 缓冲流
+		- InputStreamReader 转换流
+- Byte字节流
+	- OutputStream 输出流
+		- FileOutputStream 文件流
+		- BufferedOutputStream 缓冲流
+		- PrintStream 打印流
+		- ByteArrayOutputStream 字节数组输出流
+		- DataOutputStream 基本数据输出流
+		- ObjectOutputStream 对象数据输出流
+		- PipedOutputStream 管道输出流
+	- InputStream 输入流
+		- FileInputStream 文件流
+		- BufferedInputStream 缓冲流
+		- SequenceInputStream 合并流
+		- ByteArrayInputStream 字节数据输入流
+		- DataInputStream 基本数据输入流
+		- ObjectInputStream 对象数据输入流
+		- PipedInputStream 管道输入流
+- RandomAccessFile 随机读写文件类
