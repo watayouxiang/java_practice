@@ -1,0 +1,12 @@
+- JDK9
+  - 模块化特性
+- JDK11
+  - HTTP/2与HttpClient
+- JDK15
+  - 隐藏类
+- JDK16
+  - Records档案类
+- JDK17
+  - 密封类
+- JDK18
+  - 默认UTF-8编码
