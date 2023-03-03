@@ -1,1 +1,1 @@
-# my_java_proj
+# java_practice
