@@ -2,6 +2,7 @@ package com.watayouxiang.myjava.utils;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -58,6 +59,7 @@ public class InvoiceUtils {
     }
 
     public static void main(String[] args) {
-        InvoiceUtils.calTotalAmount("/Users/wangtao/Documents/wata_钛特云科技资料/发票/未报销");
+        System.out.print("请输入发票所在目录：");
+        InvoiceUtils.calTotalAmount(new Scanner(System.in).nextLine());
     }
 }
