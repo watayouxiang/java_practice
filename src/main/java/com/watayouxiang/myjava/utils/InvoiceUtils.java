@@ -37,7 +37,7 @@ public class InvoiceUtils {
             throw new RuntimeException(file.getAbsolutePath() + "：无法访问");
         }
         if (files.length == 0) {
-            throw new RuntimeException(file.getAbsolutePath() + "：没有发票");
+            System.out.println(file.getAbsolutePath() + "：没有发票");
         }
         double total = 0;
         int count = 0;
@@ -58,6 +58,6 @@ public class InvoiceUtils {
     }
 
     public static void main(String[] args) {
-        InvoiceUtils.calTotalAmount("/Users/wangtao/Documents/wata_钛特云科技资料/发票/未报销/202203发票");
+        InvoiceUtils.calTotalAmount("/Users/wangtao/Documents/wata_钛特云科技资料/发票/未报销/2022年3月发票-9046.01元");
     }
 }
