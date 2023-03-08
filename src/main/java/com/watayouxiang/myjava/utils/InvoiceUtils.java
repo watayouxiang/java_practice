@@ -46,7 +46,8 @@ public class InvoiceUtils {
             String name = f.getName();
             Matcher matcher = pattern.matcher(name);
             if (!matcher.find()) {
-                throw new RuntimeException(f.getAbsolutePath() + "：该发票无金额");
+                System.out.println(f.getAbsolutePath() + "：该发票无金额");
+                continue;
             }
             double cny = Double.parseDouble(matcher.group());
             total += cny;
