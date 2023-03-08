@@ -52,7 +52,7 @@ public class InvoiceUtils {
             String name = f.getName();
             Matcher matcher = Pattern.compile("(^\\d+\\.\\d+)|(^\\d+)").matcher(name);
             if (!matcher.find()) {
-                throw new RuntimeException(name + "：该发票无金额");
+                throw new RuntimeException(f.getAbsolutePath() + "：该发票无金额");
             }
             String group = matcher.group();
             double cny = Double.parseDouble(group);
