@@ -31,7 +31,15 @@ public class InvoiceUtils {
         File[] files = file.listFiles(new FileFilter() {
             @Override
             public boolean accept(File pathname) {
-                return pathname.isFile();
+                if (pathname.isFile()) {
+                    String name = pathname.getName();
+                    String substring = name.substring(name.lastIndexOf(".") + 1);
+                    return "ofd".equals(substring)
+                            || "pdf".equals(substring)
+                            || "png".equals(substring)
+                            || "jpg".equals(substring);
+                }
+                return false;
             }
         });
         if (files == null) {
