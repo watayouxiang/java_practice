@@ -58,6 +58,6 @@ public class InvoiceUtils {
     }
 
     public static void main(String[] args) {
-        InvoiceUtils.calTotalAmount("/Users/wangtao/Documents/wata_钛特云科技资料/发票/未报销/2022年3月发票-9046.01元");
+        InvoiceUtils.calTotalAmount("/Users/wangtao/Documents/wata_钛特云科技资料/发票/未报销");
     }
 }
