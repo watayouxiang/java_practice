@@ -1,4 +1,4 @@
-package com.watayouxiang.myjava.thread.threadcoreknowledge.threaderror;
+package com.watayouxiang.myjava.thread.threadcoreknowledge.multithreaderror;
 
 /**
  * 描述：     初始化未完毕，就this赋值

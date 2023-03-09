@@ -1,4 +1,4 @@
-package com.watayouxiang.myjava.thread.threadcoreknowledge.threaderror;
+package com.watayouxiang.myjava.thread.threadcoreknowledge.multithreaderror;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.watayouxiang.myjava.thread.threadcoreknowledge.threaderror;
+package com.watayouxiang.myjava.thread.threadcoreknowledge.multithreaderror;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
