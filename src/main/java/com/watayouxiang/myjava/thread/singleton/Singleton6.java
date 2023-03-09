@@ -2,6 +2,9 @@ package com.watayouxiang.myjava.thread.singleton;
 
 /**
  * 描述：     双重检查（线程安全）（推荐用）
+ * <p>
+ * volatile 只能保证 “有序性” 和 “可见性”
+ * synchronized 只能保证 “有序性” 和 “可见性”
  */
 public class Singleton6 {
 
