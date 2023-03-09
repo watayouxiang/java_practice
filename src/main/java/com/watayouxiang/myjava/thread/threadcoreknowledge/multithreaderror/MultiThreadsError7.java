@@ -17,8 +17,10 @@ public class MultiThreadsError7 {
             }
 
         };
-        for (int i = 0; i < 10000; i++) {
-            System.out.print(i);
+        try {
+            Thread.sleep(20);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
         count = 100;
     }

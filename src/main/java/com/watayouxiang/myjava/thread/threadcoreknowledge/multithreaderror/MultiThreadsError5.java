@@ -11,14 +11,17 @@ public class MultiThreadsError5 {
         source.registerListener(new EventListener() {
             @Override
             public void onEvent(Event e) {
-                // 注册监听器，内部类含有外部类引用，此时 count = 0
+                // 内部类含有外部类引用，此时 count = 0
                 System.out.println("\n我得到的数字是" + count);
             }
 
         });
-        for (int i = 0; i < 10000; i++) {
-            System.out.print(i);
+        try {
+            Thread.sleep(20);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+        // 此时 count = 100
         count = 100;
     }
 
