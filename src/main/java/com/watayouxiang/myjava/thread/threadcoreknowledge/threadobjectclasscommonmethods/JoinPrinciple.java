@@ -20,10 +20,12 @@ public class JoinPrinciple {
 
         thread.start();
         System.out.println("开始等待子线程运行完毕");
-        thread.join();
-//        synchronized (thread) {
-//            thread.wait();
-//        }
+//        thread.join();
+        synchronized (thread) {
+            thread.wait();
+            // 通过阅读 native 层源码可以发现：
+            // 当 thread 运行结束后，会隐式调用 thread.notifyAll() 方法
+        }
         System.out.println("所有子线程执行完毕");
     }
 }
