@@ -18,7 +18,6 @@ public class WaitNotifyPrintOddEveWait {
     //1. 拿到锁，我们就打印
     //2. 打印完，唤醒其他线程，自己就休眠
     static class TurningRunner implements Runnable {
-
         @Override
         public void run() {
             while (count <= 100) {

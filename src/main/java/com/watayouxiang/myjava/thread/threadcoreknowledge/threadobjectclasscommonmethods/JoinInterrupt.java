@@ -23,7 +23,7 @@ public class JoinInterrupt {
         try {
             thread1.join();
         } catch (InterruptedException e) {
-            System.out.println(Thread.currentThread().getName()+"主线程中断了");
+            System.out.println("主线程中断了");
             thread1.interrupt();
         }
         System.out.println("子线程已运行完毕");

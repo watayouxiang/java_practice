@@ -8,7 +8,6 @@ public class Wait {
     public static Object object = new Object();
 
     static class Thread1 extends Thread {
-
         @Override
         public void run() {
             synchronized (object) {
@@ -18,13 +17,12 @@ public class Wait {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("线程" + Thread.currentThread().getName() + "获取到了锁。");
+                System.out.println("线程" + Thread.currentThread().getName() + "获取到了锁");
             }
         }
     }
 
     static class Thread2 extends Thread {
-
         @Override
         public void run() {
             synchronized (object) {

@@ -39,8 +39,7 @@ class Consumer implements Runnable {
 
     private EventStorage storage;
 
-    public Consumer(
-            EventStorage storage) {
+    public Consumer(EventStorage storage) {
         this.storage = storage;
     }
 

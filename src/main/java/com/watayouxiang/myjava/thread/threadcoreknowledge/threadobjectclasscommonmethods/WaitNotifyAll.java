@@ -18,7 +18,7 @@ public class WaitNotifyAll implements Runnable {
                 synchronized (resourceA) {
                     resourceA.notifyAll();
 //                    resourceA.notify();
-                    System.out.println("ThreadC notified.");
+                    System.out.println(Thread.currentThread().getName()+" notified.");
                 }
             }
         });
