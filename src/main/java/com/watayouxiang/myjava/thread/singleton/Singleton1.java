@@ -1,7 +1,7 @@
 package com.watayouxiang.myjava.thread.singleton;
 
 /**
- * 描述：     饿汉式（静态常量）（可用）
+ * 描述：     饿汉式（静态常量）（线程安全）
  */
 public class Singleton1 {
 

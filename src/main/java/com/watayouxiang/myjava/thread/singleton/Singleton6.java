@@ -1,7 +1,7 @@
 package com.watayouxiang.myjava.thread.singleton;
 
 /**
- * 描述：     双重检查（推荐面试使用）（线程安全）（推荐用）
+ * 描述：     双重检查（线程安全）（推荐用）
  */
 public class Singleton6 {
 

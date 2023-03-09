@@ -1,7 +1,7 @@
 package com.watayouxiang.myjava.thread.singleton;
 
 /**
- * 描述：     懒汉式（线程安全）（不推荐）
+ * 描述：     懒汉式（线程安全）
  */
 public class Singleton4 {
 

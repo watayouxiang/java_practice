@@ -1,7 +1,7 @@
 package com.watayouxiang.myjava.thread.singleton;
 
 /**
- * 描述：     静态内部类方式（推荐用）（懒汉式）
+ * 描述：     静态内部类方式（懒汉式）（线程安全）（推荐用）
  */
 public class Singleton7 {
 
