@@ -28,7 +28,7 @@ public class FieldVisibilityABCD {
         int cc = c;
         int dd = d;
 
-        System.out.println("b=" + b + ";a=" + a);
+        System.out.println("a=" + a + ";b=" + b);
     }
 
     public static void main(String[] args) {
