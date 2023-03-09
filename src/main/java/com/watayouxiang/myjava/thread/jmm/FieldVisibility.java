@@ -13,9 +13,9 @@ public class FieldVisibility {
         b = a;
     }
 
-
     private void print() {
-        System.out.println("b=" + b + ";a=" + a);
+        // volatile修饰后，此时找不到 a=1;b=3 的情况
+        System.out.println("a=" + a + ";b=" + b);
     }
 
     public static void main(String[] args) {
