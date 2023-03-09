@@ -11,6 +11,7 @@ public class MultiThreadsError5 {
         source.registerListener(new EventListener() {
             @Override
             public void onEvent(Event e) {
+                // 注册监听器，内部类含有外部类引用，此时 count = 0
                 System.out.println("\n我得到的数字是" + count);
             }
 
@@ -31,8 +32,7 @@ public class MultiThreadsError5 {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                mySource.eventCome(new Event() {
-                });
+                mySource.eventCome(new Event() {});
             }
         }).start();
         MultiThreadsError5 multiThreadsError5 = new MultiThreadsError5(mySource);
