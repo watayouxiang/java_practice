@@ -39,8 +39,7 @@ public class MultiThreadsError7 {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                mySource.eventCome(new MultiThreadsError5.Event() {
-                });
+                mySource.eventCome(new MultiThreadsError5.Event() {});
             }
         }).start();
         MultiThreadsError7 multiThreadsError7 = new MultiThreadsError7(mySource);
