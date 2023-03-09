@@ -17,7 +17,7 @@ public class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandl
     @Override
     public void uncaughtException(Thread t, Throwable e) {
         Logger logger = Logger.getAnonymousLogger();
-        logger.log(Level.WARNING, "线程异常，终止啦" + t.getName());
-        System.out.println(name + "捕获了异常" + t.getName() + "异常");
+        logger.log(Level.WARNING, "线程异常，终止啦：" + t.getName());
+        System.out.println(name + "：捕获了异常 " + t.getName() + " 异常");
     }
 }
