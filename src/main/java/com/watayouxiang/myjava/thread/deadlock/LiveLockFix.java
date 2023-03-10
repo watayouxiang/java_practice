@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * 描述：     演示活锁问题
  */
-public class LiveLock {
+public class LiveLockFix {
 
     static class Spoon {
 
@@ -49,7 +49,8 @@ public class LiveLock {
                     continue;
                 }
                 Random random = new Random();
-                if (spouse.isHungry) {
+                // 引入随机条件方式解决 活锁 问题
+                if (spouse.isHungry && random.nextInt(10) < 9) {
                     System.out.println(name + ": 亲爱的" + spouse.name + "你先吃吧");
                     spoon.setOwner(spouse);
                     continue;
