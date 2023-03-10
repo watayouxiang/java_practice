@@ -47,6 +47,8 @@ public class TransferMoneyFix implements Runnable {
                 System.out.println("成功转账" + amount + "元");
             }
         }
+
+        // 通过 hashcode 来排序，根据顺序获取资源，从而避免死锁
         int fromHash = System.identityHashCode(from);
         int toHash = System.identityHashCode(to);
 
