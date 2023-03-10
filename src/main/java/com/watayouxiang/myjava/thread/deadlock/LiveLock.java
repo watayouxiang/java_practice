@@ -1,7 +1,5 @@
 package com.watayouxiang.myjava.thread.deadlock;
 
-import java.util.Random;
-
 /**
  * 描述：     演示活锁问题
  */
@@ -33,13 +31,14 @@ public class LiveLock {
         private String name;
         private boolean isHungry;
 
-        public Diner(String name) {
+        public Diner(String name, boolean isHungry) {
             this.name = name;
-            isHungry = true;
+            this.isHungry = isHungry;
         }
 
         public void eatWith(Spoon spoon, Diner spouse) {
             while (isHungry) {
+                // 使线程交替执行
                 if (spoon.owner != this) {
                     try {
                         Thread.sleep(1);
@@ -48,13 +47,15 @@ public class LiveLock {
                     }
                     continue;
                 }
-                Random random = new Random();
+
+                // 让勺子给爱人
                 if (spouse.isHungry) {
                     System.out.println(name + ": 亲爱的" + spouse.name + "你先吃吧");
                     spoon.setOwner(spouse);
                     continue;
                 }
 
+                // 吃完饭，并把勺子给爱人
                 spoon.use();
                 isHungry = false;
                 System.out.println(name + ": 我吃完了");
@@ -65,8 +66,8 @@ public class LiveLock {
 
 
     public static void main(String[] args) {
-        Diner husband = new Diner("牛郎");
-        Diner wife = new Diner("织女");
+        Diner husband = new Diner("牛郎", true);
+        Diner wife = new Diner("织女", true);
 
         Spoon spoon = new Spoon(husband);
 

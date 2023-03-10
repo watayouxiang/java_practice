@@ -33,9 +33,9 @@ public class LiveLockFix {
         private String name;
         private boolean isHungry;
 
-        public Diner(String name) {
+        public Diner(String name, boolean isHungry) {
             this.name = name;
-            isHungry = true;
+            this.isHungry = isHungry;
         }
 
         public void eatWith(Spoon spoon, Diner spouse) {
@@ -50,6 +50,7 @@ public class LiveLockFix {
                 }
                 Random random = new Random();
                 // 引入随机条件方式解决 活锁 问题
+                // 有十分之一的概率不让勺子
                 if (spouse.isHungry && random.nextInt(10) < 9) {
                     System.out.println(name + ": 亲爱的" + spouse.name + "你先吃吧");
                     spoon.setOwner(spouse);
@@ -66,8 +67,8 @@ public class LiveLockFix {
 
 
     public static void main(String[] args) {
-        Diner husband = new Diner("牛郎");
-        Diner wife = new Diner("织女");
+        Diner husband = new Diner("牛郎", true);
+        Diner wife = new Diner("织女", true);
 
         Spoon spoon = new Spoon(husband);
 
