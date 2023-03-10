@@ -3,7 +3,7 @@ package com.watayouxiang.myjava.thread.threadpool2;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ShutDown {
+public class ShutDown2 {
     public static void main(String[] args) {
         ExecutorService threadPool = Executors.newFixedThreadPool(10);
         for (int i = 0; i < 100; i++) {
@@ -15,22 +15,9 @@ public class ShutDown {
             throw new RuntimeException(e);
         }
 
+        System.out.println("isShutdown = " + threadPool.isShutdown());
         threadPool.shutdown();
-        // shutdown后，不允许再提交线程
-//        threadPool.execute(new ShutDownTask());
+        System.out.println("isShutdown = " + threadPool.isShutdown());
 
-    }
-}
-
-class ShutDownTask implements Runnable {
-
-    @Override
-    public void run() {
-        try {
-            Thread.sleep(500);
-            System.out.println(Thread.currentThread().getName());
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
     }
 }

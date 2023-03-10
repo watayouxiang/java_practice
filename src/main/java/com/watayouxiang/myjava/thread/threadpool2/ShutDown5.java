@@ -1,9 +1,11 @@
 package com.watayouxiang.myjava.thread.threadpool2;
 
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
-public class ShutDown {
+public class ShutDown5 {
     public static void main(String[] args) {
         ExecutorService threadPool = Executors.newFixedThreadPool(10);
         for (int i = 0; i < 100; i++) {
@@ -15,22 +17,8 @@ public class ShutDown {
             throw new RuntimeException(e);
         }
 
-        threadPool.shutdown();
-        // shutdown后，不允许再提交线程
-//        threadPool.execute(new ShutDownTask());
+        List<Runnable> runnableList = threadPool.shutdownNow();
+        System.out.println("runnableList = " + runnableList.size());
 
-    }
-}
-
-class ShutDownTask implements Runnable {
-
-    @Override
-    public void run() {
-        try {
-            Thread.sleep(500);
-            System.out.println(Thread.currentThread().getName());
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
     }
 }
