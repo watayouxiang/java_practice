@@ -1,7 +1,13 @@
 package com.watayouxiang.myjava.thread.deadlock;
 
 /**
- * 描述：     转账时候遇到死锁，一旦打开注释，便会发生死锁
+ * 描述：     转账时候遇到死锁
+ * <p>
+ * 死锁的4个必要条件，缺一不可：
+ * 1. 互斥条件                from、to 互斥
+ * 2. 请求与保持条件           请求 to，保持 from
+ * 3. 不剥夺条件              线程 t1 和 t2 发生冲突，不会进行剥夺处理
+ * 4. 循环等待条件             线程 t1 等待 to，线程 t2 等待 from
  */
 public class TransferMoney implements Runnable {
 
@@ -37,11 +43,12 @@ public class TransferMoney implements Runnable {
     public static void transferMoney(Account from, Account to, int amount) {
         synchronized (from) {
 
-//            try {
-//                Thread.sleep(10);
-//            } catch (InterruptedException e) {
-//                throw new RuntimeException(e);
-//            }
+            // 模拟耗时操作，使发生死锁
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
 
             synchronized (to) {
                 if (from.balance - amount < 0) {
