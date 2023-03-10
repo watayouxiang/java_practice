@@ -2,6 +2,12 @@ package com.watayouxiang.myjava.thread.deadlock;
 
 /**
  * 描述：     必定发生死锁的情况
+ * <p>
+ * 死锁的4个必要条件，缺一不可：
+ * 1. 互斥条件                o1、o2 互斥
+ * 2. 请求与保持条件           请求 o2，保持 o1
+ * 3. 不剥夺条件              线程 r1 和 r2 发生冲突，不会进行剥夺处理
+ * 4. 循环等待条件             线程 r1 等待 o2，线程 r2 等待 o1
  */
 public class MustDeadLock implements Runnable {
 
