@@ -1,17 +1,18 @@
 package com.watayouxiang.myjava.thread.deadlock;
 
 /**
- * 描述：     转账时候遇到死锁，一旦打开注释，便会发生死锁
+ * 描述：     转账时候遇到死锁，解决办法
  */
-public class TransferMoney implements Runnable {
+public class TransferMoneyFix implements Runnable {
 
     int flag = 1;
     static Account a = new Account(500);
     static Account b = new Account(500);
+    static Object lock = new Object();
 
     public static void main(String[] args) throws InterruptedException {
-        TransferMoney r1 = new TransferMoney();
-        TransferMoney r2 = new TransferMoney();
+        TransferMoneyFix r1 = new TransferMoneyFix();
+        TransferMoneyFix r2 = new TransferMoneyFix();
         r1.flag = 1;
         r2.flag = 0;
         Thread t1 = new Thread(r1);
@@ -35,24 +36,44 @@ public class TransferMoney implements Runnable {
     }
 
     public static void transferMoney(Account from, Account to, int amount) {
-        synchronized (from) {
-
-//            try {
-//                Thread.sleep(10);
-//            } catch (InterruptedException e) {
-//                throw new RuntimeException(e);
-//            }
-
-            synchronized (to) {
+        class Helper {
+            public void transfer() {
                 if (from.balance - amount < 0) {
                     System.out.println("余额不足，转账失败。");
                     return;
                 }
                 from.balance -= amount;
-                to.balance += amount;
+                to.balance = to.balance + amount;
                 System.out.println("成功转账" + amount + "元");
             }
         }
+        int fromHash = System.identityHashCode(from);
+        int toHash = System.identityHashCode(to);
+
+        if (fromHash < toHash) {
+            synchronized (from) {
+                synchronized (to) {
+                    new Helper().transfer();
+                }
+            }
+        }
+        else if (fromHash > toHash) {
+            synchronized (to) {
+                synchronized (from) {
+                    new Helper().transfer();
+                }
+            }
+        }
+        else  {
+            synchronized (lock) {
+                synchronized (to) {
+                    synchronized (from) {
+                        new Helper().transfer();
+                    }
+                }
+            }
+        }
+
     }
 
 
