@@ -24,6 +24,8 @@ public class ThreadMXBeanDetection implements Runnable {
         t1.start();
         t2.start();
         Thread.sleep(1000);
+
+        // 检测死锁
         ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
         long[] deadlockedThreads = threadMXBean.findDeadlockedThreads();
         if (deadlockedThreads != null && deadlockedThreads.length > 0) {
