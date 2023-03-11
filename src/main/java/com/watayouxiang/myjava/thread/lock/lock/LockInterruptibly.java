@@ -7,7 +7,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * author：wangtao
  * email：watayouixang@qq.com
  * time：2023/3/11
- * description：
+ * description：lock.lockInterruptibly(); 相当于把 lock1.tryLock(800, TimeUnit.MILLISECONDS)
+ * 超时时间设置为无限。在等待锁期间，可以被中断。
  */
 public class LockInterruptibly implements Runnable {
 
