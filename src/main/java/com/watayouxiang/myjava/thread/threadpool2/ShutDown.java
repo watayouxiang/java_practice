@@ -1,7 +1,9 @@
 package com.watayouxiang.myjava.thread.threadpool2;
 
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class ShutDown {
     public static void main(String[] args) {
@@ -15,9 +17,19 @@ public class ShutDown {
             throw new RuntimeException(e);
         }
 
-        threadPool.shutdown();
-        // shutdown后，不允许再提交线程
-//        threadPool.execute(new ShutDownTask());
+//        threadPool.shutdown();
+//        // shutdown后，不允许再提交线程
+//        // threadPool.execute(new ShutDownTask());
+//        System.out.println("isShutdown = " + threadPool.isShutdown());
+//        System.out.println("isTerminated = " + threadPool.isTerminated());
+//        try {
+//            System.out.println("awaitTermination = " + threadPool.awaitTermination(10, TimeUnit.SECONDS));
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+
+        List<Runnable> runnableList = threadPool.shutdownNow();
+        System.out.println("runnableList = " + runnableList.size());
 
     }
 }
