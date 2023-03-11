@@ -23,9 +23,10 @@ public class ThreadLocalNormalUsage05 {
     }
 
     private static ExecutorService threadPool = Executors.newFixedThreadPool(10);
-    static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+//    static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
     public static void main(String[] args) {
+        // 相比要创建1000个SimpleDateFormat对象，这里只需要创建10个对象
         for (int i = 0; i < 1000; i++) {
             int finalI = i;
             threadPool.execute(new Runnable() {
