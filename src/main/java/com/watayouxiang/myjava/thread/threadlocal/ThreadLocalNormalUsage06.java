@@ -23,7 +23,6 @@ class Service2 {
     public void process() {
         User user = UserContextHolder.holder.get();
         System.out.println("Service2拿到用户名：" + user.name);
-        UserContextHolder.holder.remove();
         UserContextHolder.holder.set(new User("小陈"));
         new Service3().process();
     }
@@ -33,6 +32,9 @@ class Service3 {
     public void process() {
         User user = UserContextHolder.holder.get();
         System.out.println("Service3拿到用户名：" + user.name);
+        UserContextHolder.holder.remove();
+        User user1 = UserContextHolder.holder.get();
+        System.out.println("Service3移除用户后：user1 = " + user1);
     }
 }
 
