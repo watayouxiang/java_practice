@@ -50,7 +50,13 @@ public class NonfairBargeDemo {
         new Thread(new Runnable() {
             @Override
             public void run() {
-
+                Thread[] threads = new Thread[1000];
+                for (int i = 0; i < threads.length; i++) {
+                    threads[i] = new Thread(() -> read(), "子线程创建的Thread" + i);
+                }
+                for (int i = 0; i < threads.length; i++) {
+                    threads[i].start();
+                }
             }
         }).start();
     }
