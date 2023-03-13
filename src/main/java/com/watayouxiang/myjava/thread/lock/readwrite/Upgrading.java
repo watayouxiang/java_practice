@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * author：wangtao
  * email：watayouixang@qq.com
  * time：2023/3/13
- * description：锁可以降级，但不能升级
+ * description：升降级策略：锁可以降级，但不能升级
  */
 public class Upgrading {
     private static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock(false);

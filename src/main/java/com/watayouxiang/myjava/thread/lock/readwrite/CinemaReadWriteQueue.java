@@ -7,6 +7,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * email：watayouixang@qq.com
  * time：2023/3/13
  * description：演示非公平和公平的ReentrantReadWriteLock的策略
+ * <p>
+ * 插队策略：为了防止饥饿，读锁不能插队
  */
 public class CinemaReadWriteQueue {
     private static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock(false);

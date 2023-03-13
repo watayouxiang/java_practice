@@ -6,7 +6,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * author：wangtao
  * email：watayouixang@qq.com
  * time：2023/3/13
- * description：读写锁的基本使用
+ * description：读写锁的基本使用：要么多读，要么一写
+ * <p>
+ * 适用场合：相比于ReentrantLock适用于一般场合，ReentrantReadWriteLock适用于读多写少的情况，合理适用可以进一步提高并发效率。
  */
 public class CinemaReadWrite {
     private static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
