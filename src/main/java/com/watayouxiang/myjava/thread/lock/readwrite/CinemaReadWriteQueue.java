@@ -6,10 +6,10 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * author：wangtao
  * email：watayouixang@qq.com
  * time：2023/3/13
- * description：读写锁的基本使用
+ * description：演示非公平和公平的ReentrantReadWriteLock的策略
  */
-public class CinemaReadWrite {
-    private static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
+public class CinemaReadWriteQueue {
+    private static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock(false);
     private static ReentrantReadWriteLock.ReadLock readLock = reentrantReadWriteLock.readLock();
     private static ReentrantReadWriteLock.WriteLock writeLock = reentrantReadWriteLock.writeLock();
 
@@ -40,9 +40,10 @@ public class CinemaReadWrite {
     }
 
     public static void main(String[] args) {
-        new Thread(() -> read(), "线程1").start();
+        new Thread(() -> write(), "线程1").start();
         new Thread(() -> read(), "线程2").start();
-        new Thread(() -> write(), "线程3").start();
+        new Thread(() -> read(), "线程3").start();
         new Thread(() -> write(), "线程4").start();
+        new Thread(() -> read(), "线程5").start();
     }
 }
