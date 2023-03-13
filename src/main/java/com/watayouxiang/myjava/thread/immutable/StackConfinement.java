@@ -4,7 +4,7 @@ package com.watayouxiang.myjava.thread.immutable;
  * author：wangtao
  * email：watayouixang@qq.com
  * time：2023/3/13
- * description：演示栈封闭的两种情况，基本变量和对象
+ * description：演示 "栈封闭" 的两种情况，基本变量和对象
  * 先演示线程争抢带来错误结果，然后把变量放到方法内，情况变了
  */
 public class StackConfinement implements Runnable {
