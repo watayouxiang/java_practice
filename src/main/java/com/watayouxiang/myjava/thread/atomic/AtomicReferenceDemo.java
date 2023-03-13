@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * time：2023/3/13
  * description：演示 AtomicReference 的使用
  */
-public class SpinLock {
+public class AtomicReferenceDemo {
 
     private AtomicReference<Thread> sign = new AtomicReference<>();
 
@@ -25,7 +25,7 @@ public class SpinLock {
     }
 
     public static void main(String[] args) {
-        SpinLock spinLock = new SpinLock();
+        AtomicReferenceDemo spinLock = new AtomicReferenceDemo();
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
