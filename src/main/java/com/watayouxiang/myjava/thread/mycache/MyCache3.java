@@ -29,6 +29,7 @@ public class MyCache3<A, V> implements Computable<A, V> {
         return result;
     }
 
+    // 请在 java 1.8 下运行
     public static void main(String[] args) {
         MyCache3<String, Integer> cache = new MyCache3<>(new ExpensiveFunction());
         System.out.println("开始计算了");
