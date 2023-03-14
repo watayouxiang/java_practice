@@ -8,11 +8,11 @@ import java.util.concurrent.Executors;
  * author：wangtao
  * email：watayouixang@qq.com
  * time：2023/3/14
- * description：一个线程等待多个线程都只想完毕，再执行自己的工作。
+ * description：一等多的场景
  * <p>
  * 工厂中，质检，5个工人检查，所有人都认为通过，才通过。
  */
-public class CountDownLatchDemo {
+public class CountDownLatchDemo1 {
     public static void main(String[] args) throws InterruptedException {
         CountDownLatch latch = new CountDownLatch(5);
         ExecutorService service = Executors.newFixedThreadPool(5);
