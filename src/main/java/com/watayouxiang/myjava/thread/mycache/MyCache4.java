@@ -32,11 +32,43 @@ public class MyCache4<A, V> implements Computable<A, V> {
     }
 
     public static void main(String[] args) throws Exception {
-        MyCache4<String, Integer> myCache2 = new MyCache4<>(new ExpensiveFunction());
+        MyCache4<String, Integer> cache = new MyCache4<>(new ExpensiveFunction());
         System.out.println("开始计算了");
-        Integer result = myCache2.compute("666");
-        System.out.println("第一次计算结果" + result);
-        result = myCache2.compute("666");
-        System.out.println("第二次计算结果" + result);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Integer result = cache.compute("666");
+                    System.out.println("第一次计算结果" + result);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Integer result = cache.compute("667");
+                    System.out.println("第二次计算结果" + result);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Integer result = cache.compute("666");
+                    System.out.println("第三次计算结果" + result);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }).start();
     }
 }

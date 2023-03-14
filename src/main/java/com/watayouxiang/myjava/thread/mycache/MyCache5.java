@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * <p> author：wangtao
  * <p> email：watayouixang@qq.com
  * <p> time：2023/3/14
- * <p> description：
+ * <p> description：存在重复计算问题
  */
 public class MyCache5<A, V> implements Computable<A, V> {
     private final ConcurrentHashMap<A, V> cache = new ConcurrentHashMap<>();
