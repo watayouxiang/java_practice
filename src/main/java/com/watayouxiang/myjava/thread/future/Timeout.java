@@ -54,7 +54,8 @@ public class Timeout {
         } catch (TimeoutException e) {
             ad = new Ad("超时时候的默认广告");
             System.out.println("获取广告超时");
-            boolean cancel = f.cancel(false);
+//            boolean cancel = f.cancel(false);
+            boolean cancel = f.cancel(true);
             System.out.println("cancel = " + cancel);
         }
 
