@@ -18,6 +18,7 @@ public class GetException {
                 System.out.println(i);
                 Thread.sleep(500);
             }
+            System.out.println("isDone = " + future.isDone());
             future.get();
         } catch (InterruptedException e) {
             System.out.println("InterruptedException异常");
