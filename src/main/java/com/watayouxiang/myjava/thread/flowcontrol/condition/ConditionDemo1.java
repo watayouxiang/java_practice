@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * author：wangtao
  * email：watayouixang@qq.com
  * time：2023/3/14
- * description：
+ * description：ReentrantLock的基本使用
  */
 public class ConditionDemo1 {
     private ReentrantLock lock = new ReentrantLock();
