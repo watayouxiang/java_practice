@@ -7,7 +7,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * author：wangtao
  * email：watayouixang@qq.com
  * time：2023/3/14
- * description：CopyOnWriteArrayList可以在迭代的过程中修改数组内容，但是ArrayList不行
+ * description：
+ * 1、CopyOnWriteArrayList不能保证数据的一致性，如果希望写入的数据，马上能读到，那么请不要用这个类
+ * 2、因为CopyOnWriteArrayList是写复制机制，所以在进行写操作时，内存会同时驻村两个对象的内存
  */
 public class CopyOnWriteArrayListDemo2 {
     public static void main(String[] args) {
