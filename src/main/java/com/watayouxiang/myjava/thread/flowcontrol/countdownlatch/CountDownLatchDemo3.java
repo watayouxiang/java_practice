@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
  * <p>
  * 模拟100米跑步，5名选手都准备好了，只等待裁判员一声令下，所有人同时开始跑步。所有人都到终点后，比赛结束。
  */
-public class CountDownLatchDemo1And2 {
+public class CountDownLatchDemo3 {
     public static void main(String[] args) throws InterruptedException {
         CountDownLatch begin = new CountDownLatch(1);
         CountDownLatch end = new CountDownLatch(5);
