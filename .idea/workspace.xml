@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="038dd1f6-58b0-4092-8a71-5fd7940c7580" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache10.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,9 +73,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyCache9">
-    <configuration name="MyCache3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.thread.mycache.MyCache3" />
+  <component name="RunManager" selected="Application.MyCache10">
+    <configuration name="MyCache10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.thread.mycache.MyCache10" />
       <module name="myjava" />
       <extension name="coverage">
         <pattern>
@@ -88,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyCache7 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.thread.mycache.MyCache7" />
+    <configuration name="MyCache3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.thread.mycache.MyCache3" />
       <module name="myjava" />
       <extension name="coverage">
         <pattern>
@@ -155,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyCache10" />
         <item itemvalue="Application.MyCache9" />
         <item itemvalue="Application.MyCache8" />
         <item itemvalue="Application.MyCache7" />
         <item itemvalue="Application.MyCache7 (2)" />
-        <item itemvalue="Application.MyCache7 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678862371303</updated>
       <workItem from="1678862372654" duration="281000" />
-      <workItem from="1678863280734" duration="5416000" />
+      <workItem from="1678863280734" duration="5775000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1678863620211</created>
@@ -244,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678867849186</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=".">
+      <created>1678868710315</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678868710315</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
