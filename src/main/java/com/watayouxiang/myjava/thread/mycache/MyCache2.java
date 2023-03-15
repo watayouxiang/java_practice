@@ -4,13 +4,12 @@ import com.watayouxiang.myjava.thread.mycache.computable.Computable;
 import com.watayouxiang.myjava.thread.mycache.computable.ExpensiveFunction;
 
 import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
 
 /**
  * <p> author：wangtao
  * <p> email：watayouixang@qq.com
  * <p> time：2023/3/14
- * <p> description：用装饰者模式，给计算器自动添加缓存功能
+ * <p> description：用装饰者模式，但存在"重复计算"和"并发不安全"问题
  */
 public class MyCache2<A, V> implements Computable<A, V> {
     private final HashMap<A, V> cache = new HashMap<>();
@@ -21,21 +20,56 @@ public class MyCache2<A, V> implements Computable<A, V> {
     }
 
     @Override
-    public synchronized V compute(A arg) throws Exception {
+    public V compute(A arg) throws Exception {
         V result = cache.get(arg);
         if (result == null) {
             result = c.compute(arg);
-            cache.put(arg, result);
+            System.out.println("调用了计算函数");
+            synchronized (this) {
+                cache.put(arg, result);
+            }
         }
         return result;
     }
 
     public static void main(String[] args) throws Exception {
-        MyCache2<String, Integer> myCache2 = new MyCache2<>(new ExpensiveFunction());
-        System.out.println("开始计算了");
-        Integer result = myCache2.compute("666");
-        System.out.println("第一次计算结果" + result);
-        result = myCache2.compute("666");
-        System.out.println("第二次计算结果" + result);
+        MyCache2<String, Integer> cache = new MyCache2<>(new ExpensiveFunction());
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Integer result = cache.compute("666");
+                    System.out.println("第一次计算结果" + result);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Integer result = cache.compute("667");
+                    System.out.println("第二次计算结果" + result);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Integer result = cache.compute("666");
+                    System.out.println("第三次计算结果" + result);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+        }).start();
     }
 }

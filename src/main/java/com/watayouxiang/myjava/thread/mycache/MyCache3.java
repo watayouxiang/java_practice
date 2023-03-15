@@ -3,16 +3,16 @@ package com.watayouxiang.myjava.thread.mycache;
 import com.watayouxiang.myjava.thread.mycache.computable.Computable;
 import com.watayouxiang.myjava.thread.mycache.computable.ExpensiveFunction;
 
-import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * <p> author：wangtao
  * <p> email：watayouixang@qq.com
  * <p> time：2023/3/14
- * <p> description：用装饰者模式，给计算器自动添加缓存功能
+ * <p> description：用ConcurrentHashMap处理"并发问题"，但存在"重复计算"问题
  */
 public class MyCache3<A, V> implements Computable<A, V> {
-    private final HashMap<A, V> cache = new HashMap<>();
+    private final ConcurrentHashMap<A, V> cache = new ConcurrentHashMap<>();
     private final Computable<A, V> c;
 
     public MyCache3(Computable<A, V> c) {
@@ -20,19 +20,18 @@ public class MyCache3<A, V> implements Computable<A, V> {
     }
 
     @Override
-    public synchronized V compute(A arg) throws Exception {
+    public V compute(A arg) throws Exception {
         V result = cache.get(arg);
         if (result == null) {
             result = c.compute(arg);
+            System.out.println("调用了计算函数");
             cache.put(arg, result);
         }
         return result;
     }
 
-    // 请在 java 1.8 下运行
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         MyCache3<String, Integer> cache = new MyCache3<>(new ExpensiveFunction());
-        System.out.println("开始计算了");
 
         new Thread(new Runnable() {
             @Override
@@ -43,9 +42,9 @@ public class MyCache3<A, V> implements Computable<A, V> {
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
+
             }
         }).start();
-
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -55,9 +54,9 @@ public class MyCache3<A, V> implements Computable<A, V> {
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
+
             }
         }).start();
-
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -67,8 +66,8 @@ public class MyCache3<A, V> implements Computable<A, V> {
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
+
             }
         }).start();
-
     }
 }
