@@ -12,7 +12,9 @@ import java.util.concurrent.FutureTask;
  * <p> author：wangtao
  * <p> email：watayouixang@qq.com
  * <p> time：2023/3/14
- * <p> description：利用Future，避免重复计算
+ * <p> description：利用Future，似乎可以避免重复计算。
+ * 但依然存在重复的可能：如果有两个线程同时计算666，同时调用cache.get方法，那么返回的结果都为null，
+ * 后面还是会创建两个任务去计算相同的值。
  */
 public class MyCache4<A, V> implements Computable<A, V> {
     private final ConcurrentHashMap<A, Future<V>> cache = new ConcurrentHashMap<>();
