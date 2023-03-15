@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="newjdk" />
         <module name="myjava" />
+        <module name="newjdk" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="19" />
+    <bytecodeTargetLevel>
+      <module name="myjava" target="1.8" />
+      <module name="newjdk" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>

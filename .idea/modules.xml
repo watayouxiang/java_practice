@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/my_java_proj.iml" filepath="$PROJECT_DIR$/my_java_proj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java_practice.iml" filepath="$PROJECT_DIR$/.idea/java_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myjava/myjava.iml" filepath="$PROJECT_DIR$/myjava/myjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newjdk/newjdk.iml" filepath="$PROJECT_DIR$/newjdk/newjdk.iml" />
     </modules>
   </component>
 </project>

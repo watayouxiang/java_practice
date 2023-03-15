@@ -43,7 +43,7 @@ public class ThreadLocalNormalUsage05 {
 }
 
 class ThreadSafeFormatter{
-    public static ThreadLocal<SimpleDateFormat> dateFormatThreadLocal = new ThreadLocal<>(){
+    public static ThreadLocal<SimpleDateFormat> dateFormatThreadLocal = new ThreadLocal<SimpleDateFormat>(){
         @Override
         protected SimpleDateFormat initialValue() {
             return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");

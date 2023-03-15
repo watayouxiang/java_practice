@@ -26,7 +26,7 @@ public class MyCache5<A, V> implements Computable<A, V> {
     public V compute(A arg) throws Exception {
         Future<V> f = cache.get(arg);
         if (f == null) {
-            Callable<V> callable = new Callable<>() {
+            Callable<V> callable = new Callable<V>() {
                 @Override
                 public V call() throws Exception {
                     return c.compute(arg);
