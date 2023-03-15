@@ -9,7 +9,7 @@ import java.util.HashMap;
  * <p> author：wangtao
  * <p> email：watayouixang@qq.com
  * <p> time：2023/3/14
- * <p> description：用装饰者模式，用synchronized保证线程安全，但存在"并发效率低"问题
+ * <p> description：用装饰者模式，用synchronized锁住方法，但存在"并发效率低"问题
  */
 public class MyCache2<A, V> implements Computable<A, V> {
     private final HashMap<A, V> cache = new HashMap<>();

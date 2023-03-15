@@ -3,16 +3,16 @@ package com.watayouxiang.myjava.thread.mycache;
 import com.watayouxiang.myjava.thread.mycache.computable.Computable;
 import com.watayouxiang.myjava.thread.mycache.computable.ExpensiveFunction;
 
-import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * <p> author：wangtao
  * <p> email：watayouixang@qq.com
  * <p> time：2023/3/14
- * <p> description：但存在"重复计算"和"并发不安全"问题
+ * <p> description：用ConcurrentHashMap提高了并发效率，但存在"重复计算"问题
  */
 public class MyCache3<A, V> implements Computable<A, V> {
-    private final HashMap<A, V> cache = new HashMap<>();
+    private final ConcurrentHashMap<A, V> cache = new ConcurrentHashMap<>();
     private final Computable<A, V> c;
 
     public MyCache3(Computable<A, V> c) {
@@ -25,9 +25,7 @@ public class MyCache3<A, V> implements Computable<A, V> {
         if (result == null) {
             result = c.compute(arg);
             System.out.println("调用了计算函数");
-            synchronized (this) {
-                cache.put(arg, result);
-            }
+            cache.put(arg, result);
         }
         return result;
     }
