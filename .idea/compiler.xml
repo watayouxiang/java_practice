@@ -10,9 +10,5 @@
         <module name="newjdk" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="myjava" target="1.8" />
-      <module name="newjdk" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>
