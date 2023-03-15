@@ -1,7 +1,7 @@
 package com.watayouxiang.myjava.thread.mycache;
 
 import com.watayouxiang.myjava.thread.mycache.computable.Computable;
-import com.watayouxiang.myjava.thread.mycache.computable.MayFail;
+import com.watayouxiang.myjava.thread.mycache.computable.ExpensiveFunction;
 
 import java.util.concurrent.*;
 
@@ -9,13 +9,13 @@ import java.util.concurrent.*;
  * <p> author：wangtao
  * <p> email：watayouixang@qq.com
  * <p> time：2023/3/14
- * <p> description：模拟计算错误的情况，捕获异常，并重试
+ * <p> description：缓存需要有效期，实现缓存过期功能
  */
-public class MyCache6<A, V> implements Computable<A, V> {
+public class MyCache7<A, V> implements Computable<A, V> {
     private final ConcurrentHashMap<A, Future<V>> cache = new ConcurrentHashMap<>();
     private final Computable<A, V> c;
 
-    public MyCache6(Computable<A, V> c) {
+    public MyCache7(Computable<A, V> c) {
         this.c = c;
     }
 
@@ -54,14 +54,46 @@ public class MyCache6<A, V> implements Computable<A, V> {
         }
     }
 
+    private final static ScheduledExecutorService exec = Executors.newScheduledThreadPool(5);
+
+    /**
+     * 清除过期的缓存
+     *
+     * @param expire 过期时间，单位毫秒
+     */
+    public V compute(A arg, long expire) throws ExecutionException, InterruptedException {
+        if (expire > 0) {
+            exec.schedule(new Runnable() {
+                @Override
+                public void run() {
+                    expire(arg);
+                }
+            }, expire, TimeUnit.MILLISECONDS);
+        }
+        return compute(arg);
+    }
+
+    /**
+     * 清除缓存
+     */
+    private void expire(A arg) {
+        Future<V> future = cache.get(arg);
+        if (!future.isDone()) {
+            System.out.println("过期时间到，Future任务被取消");
+            future.cancel(true);
+        }
+        System.out.println("过期时间到，缓存被清除");
+        cache.remove(arg);
+    }
+
     public static void main(String[] args) throws Exception {
-        MyCache6<String, Integer> cache = new MyCache6<>(new MayFail());
+        MyCache7<String, Integer> cache = new MyCache7<>(new ExpensiveFunction());
 
         new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-                    Integer result = cache.compute("666");
+                    Integer result = cache.compute("666", 5000L);
                     System.out.println("第一次计算结果" + result);
                 } catch (Exception e) {
                     throw new RuntimeException(e);
@@ -69,6 +101,7 @@ public class MyCache6<A, V> implements Computable<A, V> {
 
             }
         }).start();
+
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -81,17 +114,9 @@ public class MyCache6<A, V> implements Computable<A, V> {
 
             }
         }).start();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Integer result = cache.compute("667");
-                    System.out.println("第三次计算结果" + result);
-                } catch (Exception e) {
-                    throw new RuntimeException(e);
-                }
 
-            }
-        }).start();
+        Thread.sleep(6000L);
+        Integer result = cache.compute("666");
+        System.out.println("第三次计算结果" + result);
     }
 }
