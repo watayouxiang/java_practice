@@ -9,7 +9,7 @@ import java.util.concurrent.*;
  * <p> author：wangtao
  * <p> email：watayouixang@qq.com
  * <p> time：2023/3/14
- * <p> description：
+ * <p> description：模拟计算错误的情况，捕获异常，并重试
  */
 public class MyCache6<A, V> implements Computable<A, V> {
     private final ConcurrentHashMap<A, Future<V>> cache = new ConcurrentHashMap<>();
