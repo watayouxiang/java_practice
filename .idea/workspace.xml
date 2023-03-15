@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="038dd1f6-58b0-4092-8a71-5fd7940c7580" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/computable/MayFail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/computable/Computable.java" beforeDir="false" afterPath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/computable/Computable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/computable/ExpensiveFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/computable/ExpensiveFunction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,26 +76,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyCache5">
-    <configuration name="MyCache1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.thread.mycache.MyCache1" />
+  <component name="RunManager" selected="Application.MyCache6">
+    <configuration name="MayFail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.thread.mycache.computable.MayFail" />
       <module name="myjava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.watayouxiang.myjava.thread.mycache.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyCache2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.thread.mycache.MyCache2" />
-      <module name="myjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.watayouxiang.myjava.thread.mycache.*" />
+          <option name="PATTERN" value="com.watayouxiang.myjava.thread.mycache.computable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,13 +142,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyCache6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.thread.mycache.MyCache6" />
+      <module name="myjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.watayouxiang.myjava.thread.mycache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyCache6" />
+        <item itemvalue="Application.MayFail" />
         <item itemvalue="Application.MyCache5" />
         <item itemvalue="Application.MyCache4" />
         <item itemvalue="Application.MyCache3" />
-        <item itemvalue="Application.MyCache3" />
-        <item itemvalue="Application.MyCache2" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678862371303</updated>
       <workItem from="1678862372654" duration="281000" />
-      <workItem from="1678863280734" duration="2355000" />
+      <workItem from="1678863280734" duration="3369000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1678863620211</created>
@@ -201,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678864922651</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=".">
+      <created>1678865645980</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678865645980</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
