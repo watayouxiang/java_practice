@@ -62,8 +62,8 @@ public class MyCache4<A, V> implements Computable<A, V> {
             @Override
             public void run() {
                 try {
-                    Integer result = cache.compute("667");
-                    System.out.println("第二次计算结果" + result);
+                    Integer result = cache.compute("666");
+                    System.out.println("第三次计算结果" + result);
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
@@ -74,8 +74,8 @@ public class MyCache4<A, V> implements Computable<A, V> {
             @Override
             public void run() {
                 try {
-                    Integer result = cache.compute("666");
-                    System.out.println("第三次计算结果" + result);
+                    Integer result = cache.compute("667");
+                    System.out.println("第二次计算结果" + result);
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
