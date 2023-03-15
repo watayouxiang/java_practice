@@ -4,312 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5374cdda-2e45-4232-8909-f2d7c0f2e739" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/java_practice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/myjava.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Demo_Date.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Demo_Exception.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Demo_File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Demo_Math.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Demo_Object.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Demo_Properties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Demo_Runtime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Demo_System.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Test_Exception.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/clazz/Test_File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Demo_Arrays.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Demo_Collection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Demo_Collections.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Demo_List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Demo_Map.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Demo_Set.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Demo_String.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Demo_StringBuffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Demo_StringBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Test_Array.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Test_List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Test_Map.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/collection/Test_String.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_doWhile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_for.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_static.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_while.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_代码块.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_内部类.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_可变参数.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_多态.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_泛型.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_访问权限.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_进制转换.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/Demo_静态导入.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/JDK1.5新特性.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/原码反码补码.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/grammar/运算符.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte01_FileOutputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte02_FileInputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte03_BufferedOutputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte04_BufferedInputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte05_Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte06_PrintStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte07_SystemInOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte08_SequenceInputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte09_ByteArrayStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte10_DataStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte11_ObjectStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Byte12_PipedStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char01_FileWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char02_FileReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char03_BufferedWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char04_BufferedReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char05_Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char06_InputStreamReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char07_OutputStreamWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char08_Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char09_LineNumberReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char10_RandomAccessFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/Char11_EncodeDecode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/io/io思维导图.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/Demo01_InetAddress.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/Demo02_Udp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/Demo03_Tcp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/Demo04_TcpDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/Demo05_TcpDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/Demo06_TcpDemo3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/Demo07_URL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/Demo08_URLConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/Demo09_HttpDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/net/网络通讯基础.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/other/Java内存模型.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/other/Java方法绑定.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/other/Serializable_transient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/pattern/Demo_单例.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/pattern/Demo_模版方法.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/pattern/Demo_装饰.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/pattern/设计模式理论知识.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/reflect/Demo01_getClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/reflect/Demo02_getConstructor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/reflect/Demo03_getField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/reflect/Demo04_getMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/reflect/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/aqs/OneAQSLatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/atomic/AtomicArrayDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/atomic/AtomicIntegerDemo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/atomic/AtomicIntegerFieldUpdaterDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/atomic/AtomicReferenceDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/atomic/LongAccumulatorDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/atomic/LongAdderDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo01_Thread类.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo02_线程安全问题.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo03_同步函数.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo04_同步代码块.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo05_死锁问题.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo06_等待唤醒机制Object.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo07_生产者消费者Object.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo08_等待唤醒机制Lock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo09_生产者消费者Lock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo10_ConditionExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo11_停止线程flag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/base/Demo12_停止线程interrupt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/cas/SimulatedCAS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/cas/TwoThreadCompetition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/concurrenthashmap/ConcurrentHashMapDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/concurrenthashmap/OptionsNotSafe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/concurrenthashmap/OptionsNotSafe2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/copyonwrite/CopyOnWriteArrayListDemo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/copyonwrite/CopyOnWriteArrayListDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/predecessor/HashMapEndlessLoop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/predecessor/HashtableDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/predecessor/MapDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/predecessor/SynList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/predecessor/VectorDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/collections/queue/ArrayBlockingQueueDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/createthreads/BothRunnableThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/createthreads/RunnableStyle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/createthreads/ThreadStyle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/createthreads/wrongways/AnonymousInnerClassDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/createthreads/wrongways/DemoTimmerTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/createthreads/wrongways/Lambda.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/createthreads/wrongways/ThreadPool5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/DiningPhilosophers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/DiningPhilosophersFix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/LiveLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/LiveLockFix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/MultiTransferMoney.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/MustDeadLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/ThreadMXBeanDetection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/TransferMoney.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/TransferMoneyFix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/deadlock/TryLockDeadlock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/enhance/AtomicInteger乐观锁保证原子性.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/enhance/AtomicInteger解析.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/enhance/Java并发特性.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/enhance/SemaphoreTester.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/enhance/sleep、wait区别.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/enhance/线程的状态.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/flowcontrol/condition/ConditionDemo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/flowcontrol/condition/ConditionDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/flowcontrol/countdownlatch/CountDownLatchDemo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/flowcontrol/countdownlatch/CountDownLatchDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/flowcontrol/countdownlatch/CountDownLatchDemo3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/flowcontrol/cyclicbarrier/CyclicBarrierDemo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/flowcontrol/cyclicbarrier/CyclicBarrierDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/flowcontrol/semaphore/SemaphoreDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/flowcontrol/semaphore/SemaphoreDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/future/FutureTaskDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/future/GetException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/future/MultiFutures.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/future/OneFuture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/future/OneFutureLambda.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/future/RunnableCantThrowsException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/future/Timeout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/FinalMethodDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/FinalStringDemo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/FinalStringDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/FinalVariableDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/FinalVariableDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/FinalVariableDemo3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/ImmutableDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/StackConfinement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/immutable/TestFinal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/jmm/FieldVisibility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/jmm/NoVolatile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/jmm/NoVolatile2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/jmm/OutOfOrderExecution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/jmm/UseVolatile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/lock/LockInterruptibly.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/lock/MustUnlock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/lock/PessimismOptimismLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/lock/TryLockDeadlock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/readwrite/CinemaReadWrite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/readwrite/CinemaReadWriteQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/readwrite/NonfairBargeDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/readwrite/Upgrading.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/reentrantlock/CinemaBookSeat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/reentrantlock/FairLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/reentrantlock/GetHoldCount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/reentrantlock/LockDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/reentrantlock/RecursionDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/lock/spinlock/SpinLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/multithreaderror/Create100Threads.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/multithreaderror/JavaAndThreads.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/multithreaderror/MultiThreadsError1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/multithreaderror/MultiThreadsError2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/multithreaderror/MultiThreadsError3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/multithreaderror/MultiThreadsError4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/multithreaderror/MultiThreadsError5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/multithreaderror/MultiThreadsError6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/multithreaderror/MultiThreadsError7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/MyCache5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/computable/Computable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/mycache/computable/ExpensiveFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/singleton/Singleton1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/singleton/Singleton2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/singleton/Singleton3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/singleton/Singleton4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/singleton/Singleton5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/singleton/Singleton6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/singleton/Singleton7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/singleton/Singleton8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/sixstates/BlockedWaitingTimedWaiting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/sixstates/NewRunnableTerminated.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/startthread/CantStartTwice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/startthread/StartAndRunMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/CantInterrupt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/RightWayInterrupted.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/RightWayStopThreadInProd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/RightWayStopThreadInProd2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/RightWayStopThreadWithSleep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/RightWayStopThreadWithSleepEveryLoop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/RightWayStopThreadWithoutSleep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/RunThrowException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/StopThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/volatiledemo/WrongWayVolatile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/volatiledemo/WrongWayVolatileCantStop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/stopthreads/volatiledemo/WrongWayVolatileFixed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadlocal/ThreadLocalNPE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadlocal/ThreadLocalNormalUsage00.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadlocal/ThreadLocalNormalUsage01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadlocal/ThreadLocalNormalUsage02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadlocal/ThreadLocalNormalUsage03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadlocal/ThreadLocalNormalUsage04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadlocal/ThreadLocalNormalUsage05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadlocal/ThreadLocalNormalUsage06.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/CurrentThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/Id.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/Join.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/JoinInterrupt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/JoinPrinciple.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/JoinThreadState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/ProducerConsumerModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/SleepDontReleaseLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/SleepDontReleaseMonitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/SleepInterrupted.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/ThreadSetName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/Wait.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/WaitNotifyAll.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/WaitNotifyPrintOddEveWait.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/WaitNotifyPrintOddEvenSyn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadobjectclasscommonmethods/WaitNotifyReleaseOwnMonitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool/ThreadPoolSample1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool/ThreadPoolSample2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool/ThreadPoolSample3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool/ThreadPoolSample4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool/ThreadPoolTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool/ThreadPoolTest2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool/线程池.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool2/CachedThreadPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool2/FixedThreadPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool2/FixedThreadPoolOOM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool2/PauseableThreadPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool2/RejectPolicy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool2/ScheduledThreadPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool2/ShutDown.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool2/SingleThreadPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/threadpool2/ThreadPoolStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/uncaughtexception/CantCatchDirectly.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/uncaughtexception/ExceptionInChildThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/uncaughtexception/MyUncaughtExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/thread/uncaughtexception/UseOwnUncaughtExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava/utils/InvoiceUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newjdk/newjdk.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="038dd1f6-58b0-4092-8a71-5fd7940c7580" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2N2Us494b1T0EHHRgGRSs28c7A1" />
+  <component name="ProjectId" id="2N2VsgWkQ4Uvb1CpOcwsBurDPGw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -319,82 +30,35 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/wangtao/Desktop/javapractice/myjava/src/main/java/com/watayouxiang/myjava",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Demo01_getClass">
-    <configuration name="BothRunnableThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.thread.createthreads.BothRunnableThread" />
-      <module name="myjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.watayouxiang.myjava.thread.createthreads.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo01_getClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.myjava.reflect.Demo01_getClass" />
-      <module name="myjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.watayouxiang.myjava.reflect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sample07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.watayouxiang.newjdk.jdk13.Sample07" />
-      <module name="newjdk" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.watayouxiang.newjdk.jdk13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="java_practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="java_practice" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Demo01_getClass" />
-        <item itemvalue="Application.Sample07" />
-        <item itemvalue="Application.BothRunnableThread" />
-      </list>
-    </recent_temporary>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myjava/src/main/java/com/watayouxiang/myjava" />
+      <recent name="$PROJECT_DIR$/newjdk/src/main/java/com/watayouxiang/newjdk" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.watayouxiang.utils" />
+      <recent name="" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5374cdda-2e45-4232-8909-f2d7c0f2e739" name="Changes" comment="" />
-      <created>1678861873805</created>
+      <changelist id="038dd1f6-58b0-4092-8a71-5fd7940c7580" name="Changes" comment="" />
+      <created>1678862371303</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678861873805</updated>
-      <workItem from="1678861874891" duration="94000" />
+      <updated>1678862371303</updated>
+      <workItem from="1678862372654" duration="281000" />
     </task>
     <servers />
   </component>

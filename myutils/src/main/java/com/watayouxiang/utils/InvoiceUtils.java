@@ -1,4 +1,4 @@
-package com.watayouxiang.myjava.utils;
+package com.watayouxiang.utils;
 
 import java.io.File;
 import java.io.FileFilter;
