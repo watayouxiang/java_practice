@@ -9,7 +9,7 @@ import java.util.concurrent.*;
  * <p> author：wangtao
  * <p> email：watayouixang@qq.com
  * <p> time：2023/3/14
- * <p> description：缓存需要有效期，实现缓存过期功能
+ * <p> description：1、实现缓存过期功能 2、避免缓存雪崩
  */
 public class MyCache7<A, V> implements Computable<A, V> {
     private final ConcurrentHashMap<A, Future<V>> cache = new ConcurrentHashMap<>();
@@ -71,6 +71,14 @@ public class MyCache7<A, V> implements Computable<A, V> {
             }, expire, TimeUnit.MILLISECONDS);
         }
         return compute(arg);
+    }
+
+    /**
+     * 避免缓存雪崩（缓存同一时间过期，从而导致大量计算需要重新进行）
+     */
+    public V computeRandomExpire(A arg) throws ExecutionException, InterruptedException {
+        long randomExpire = (long) (Math.random() * 10000);
+        return compute(arg, randomExpire);
     }
 
     /**
